@@ -6,7 +6,7 @@ export const projects = [
         imgSrc: '/codecollab.jpg',
         from: 'March 2023',
         to: 'April 2023',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolor quam iste sequi odio. Commodi provident explicabo illum aperiam id veritatis ut, cupiditate tempora mollitia rerum esse! Quo cupiditate blanditiis quibusdam odio necessitatibus ea incidunt? Corrupti commodi a quibusdam accusantium amet rerum tempora laudantium eligendi consectetur, nisi consequuntur quasi assumenda',
+        description: 'An online code editor that allows users to work together on coding projects in a shared space. Implemented several APIs that perform CRUD operations on users and the spaces they own. Users can  choose variety of languages and themes.',
         tags: ['ReactJS', 'NodeJS', 'MongoDB', 'Socket.io', 'MUI']
     },
     {
@@ -16,7 +16,7 @@ export const projects = [
         imgSrc: '/algotraders.png',
         from: 'Jan 2022',
         to: 'Sept 2022',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolor quam iste sequi odio. Commodi provident explicabo illum aperiam id veritatis ut, cupiditate tempora mollitia rerum esse! Quo cupiditate blanditiis quibusdam odio necessitatibus ea incidunt? Corrupti commodi a quibusdam accusantium amet rerum tempora laudantium eligendi consectetur, nisi consequuntur quasi assumenda',
+        description: 'Implemented a wide range of account management, paper trading, and options chain features, as well as a homepage, login/registration screen, dashboard, and options chain. Wrote several APIs to retrieve data from MySQL after processing it for use in strategy execution, options trading, and paper trading, taking into account the specific needs of the business.',
         tags: ['ReactJS', 'Django', 'MySQL', 'Python', 'Apache']
 
     },

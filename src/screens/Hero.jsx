@@ -13,7 +13,7 @@ function Hero() {
         enter="transition-all duration-500 ease-out"
         enterFrom="-translate-y-6 opacity-0"
         enterTo="translate-y-0 opacity-1">
-        <div className="container mx-auto h-screen px-8 py-32 text-textLight transition-all duration-300 ease-out dark:text-textDark lg:py-48">
+        <div className="container mx-auto h-screen px-8 py-56 text-textLight transition-all duration-300 ease-out dark:text-textDark md:py-64">
           <h3 className="text-3xl lg:text-5xl">
             Hey! <span className="animate-wave">👋</span>
           </h3>
@@ -25,11 +25,10 @@ function Hero() {
             </span>
           </h1>
 
-          <p className="mt-3 py-3 text-xl md:text-2xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia odio,
-            repellendus provident amet rem reprehenderit quibusdam itaque, quos
-            hic ipsam recusandae voluptatum perferendis facere ab corporis iure
-            eos sunt laborum.🧑‍💻
+          <p className="mt-3 py-3 text-xl md:text-3xl">
+            I&#39;m a software engineer with a strong focus on design and
+            attention to detail who is passionate about creating beautiful code
+            that complements beautiful design🧑‍💻
           </p>
         </div>
       </Transition>

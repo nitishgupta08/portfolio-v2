@@ -16,9 +16,9 @@ function Projects() {
         enterTo="translate-y-0 opacity-1">
         <div
           id="projects"
-          className="container mx-auto px-4 pt-20 text-textLight dark:text-textDark lg:px-16">
-          <div className="md:flex md:justify-between">
-            <h2 className="font-semibold uppercase text-accentLight dark:text-accentDark md:text-center md:text-xl lg:text-2xl">
+          className="container mx-auto px-4 pt-16 text-textLight dark:text-textDark lg:px-16">
+          <div className="p-4 md:flex md:justify-between md:p-0">
+            <h2 className="text-xl font-semibold uppercase text-accentLight dark:text-accentDark md:text-center md:text-2xl">
               Projects
             </h2>
             <ListProjects />

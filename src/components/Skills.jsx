@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 function Skills() {
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    threshold: 1,
   });
 
   return (
@@ -15,18 +15,18 @@ function Skills() {
         enter="transition-all duration-1000 ease-out"
         enterFrom="-translate-y-6 opacity-0"
         enterTo="translate-y-0 opacity-1">
-        <div className="mt-16 md:flex">
-          <h2 className="font-semibold uppercase text-accentLight dark:text-accentDark md:text-center md:text-xl lg:text-2xl">
+        <div className="mt-16 p-4 md:flex md:p-0">
+          <h2 className="text-xl font-semibold uppercase text-accentLight dark:text-accentDark md:text-center md:text-2xl">
             Skills
           </h2>
 
-          <div className="flex flex-1 flex-wrap justify-between px-5 py-5 text-textLight dark:text-textDark md:px-32 md:py-0 lg:text-lg">
-            <div className="w-1/2  lg:w-auto ">
-              <h3 className="font-semibold uppercase">Languages</h3>
+          <div className="flex flex-1 flex-wrap justify-between py-5 text-textLight dark:text-textDark md:px-32 md:py-0">
+            <div className="w-1/2  md:w-auto ">
+              <h3 className="font-semibold uppercase md:text-xl">Languages</h3>
               <ul>
                 {languages.map((item, id) => {
                   return (
-                    <li key={id} className="opacity-95">
+                    <li key={id} className="opacity-90">
                       {item}
                     </li>
                   );
@@ -34,12 +34,12 @@ function Skills() {
               </ul>
             </div>
 
-            <div className="w-1/2 lg:w-auto">
-              <h3 className="font-semibold uppercase">Frameworks</h3>
+            <div className="w-1/2 md:w-auto">
+              <h3 className="font-semibold uppercase md:text-xl">Frameworks</h3>
               <ul>
                 {frameworks.map((item, id) => {
                   return (
-                    <li key={id} className="opacity-95">
+                    <li key={id} className="opacity-90">
                       {item}
                     </li>
                   );
@@ -48,11 +48,11 @@ function Skills() {
             </div>
 
             <div className="my-10 w-1/2 lg:my-0 lg:w-auto">
-              <h3 className="font-semibold uppercase">Tools</h3>
+              <h3 className="font-semibold uppercase md:text-xl">Tools</h3>
               <ul>
                 {tools.map((item, id) => {
                   return (
-                    <li key={id} className="opacity-95">
+                    <li key={id} className="opacity-90">
                       {item}
                     </li>
                   );
@@ -61,11 +61,11 @@ function Skills() {
             </div>
 
             <div className="my-10 w-1/2 lg:my-0 lg:w-auto">
-              <h3 className="font-semibold uppercase">DSA</h3>
+              <h3 className="font-semibold uppercase md:text-xl">DSA</h3>
               <ul>
                 {dsa.map((item, id) => {
                   return (
-                    <li key={id} className="opacity-95">
+                    <li key={id} className="opacity-90">
                       <a
                         href={item.link}
                         target="_blank"

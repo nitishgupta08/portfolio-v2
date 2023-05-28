@@ -4,7 +4,7 @@ function Footer() {
       <hr className="my-6 hidden border-[#a9a9a9] dark:border-[#d3d3d3] sm:mx-auto md:block lg:my-8" />
       <div className="md:flex md:flex-row-reverse md:items-center md:justify-between">
         <Socials />
-        <p className="text-center text-sm opacity-75 md:text-start md:text-lg">
+        <p className="text-center text-sm opacity-80 md:text-start md:text-lg">
           Designed & built by Nitish Gupta 🦁
         </p>
       </div>

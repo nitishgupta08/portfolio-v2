@@ -25,7 +25,7 @@ export const projectsArchive = [
 
     {
         title: 'v1 portfolio',
-        linklink: null,
+        linklink: 'https://v1-nitishgupta.netlify.app/',
         githubLink: 'https://github.com/nitishgupta08/portfolio',
         date: 'Feb 2022',
         tags: ['ReactJS']

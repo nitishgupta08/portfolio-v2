@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 function Experience() {
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.2,
+    threshold: 1,
   });
 
   return (
@@ -15,28 +15,28 @@ function Experience() {
         enter="transition-all duration-1500 ease-out"
         enterFrom="-translate-y-6 opacity-0"
         enterTo="translate-y-0 opacity-1">
-        <div className="mt-16 md:flex md:justify-between">
-          <h2 className="font-semibold uppercase text-accentLight dark:text-accentDark md:text-xl lg:text-2xl">
+        <div className="mt-16 p-4 md:flex md:justify-between md:p-0">
+          <h2 className="text-xl font-semibold uppercase text-accentLight dark:text-accentDark md:text-center md:text-2xl">
             Experience
           </h2>
 
           <div>
-            <div className="relative px-4 py-4 before:bg-[#a9a9a9] before:dark:bg-[#d3d3d3] md:col-span-8 md:mx-20 md:space-y-8 md:py-0 md:before:absolute md:before:-left-3 md:before:bottom-0 md:before:top-2 md:before:w-0.5">
+            <div className="relative py-4 before:bg-[#a9a9a9] before:dark:bg-[#d3d3d3] md:col-span-8 md:mx-20 md:space-y-8 md:px-4 md:py-0 md:before:absolute md:before:-left-3 md:before:bottom-0 md:before:top-2 md:before:w-0.5">
               {experience.map((item, id) => {
                 return (
                   <div
                     key={id}
                     className="mb-10 flex flex-col before:bg-accentLight  last:mb-0  before:dark:bg-accentDark md:relative md:my-0 md:before:absolute md:before:left-[-35px] md:before:top-2 md:before:z-[1] md:before:h-4 md:before:w-4 md:before:rounded-full">
-                    <h3 className="text-xl font-semibold tracking-wide">
+                    <h3 className="text-xl font-semibold tracking-wide md:text-2xl md:font-bold">
                       {item.designation}
                     </h3>
-                    <h4 className=" font-semibold tracking-wide">
+                    <h4 className="py-0.5 text-lg font-semibold tracking-wide md:text-xl">
                       {item.company}
                     </h4>
-                    <time className="dark:text-gray-400 text-xs uppercase tracking-wide">
+                    <time className="py-1 text-xs uppercase tracking-wide md:text-sm">
                       {item.from} - {item.to}
                     </time>
-                    <p className="mt-3">{item.description}</p>
+                    <p className="mt-2">{item.description}</p>
 
                     <div className="my-3 flex flex-wrap">
                       {item.tags.map((tag, id) => {
@@ -53,11 +53,8 @@ function Experience() {
                 );
               })}
             </div>
-            <p className="inline-block ">
-              <a
-                href="#"
-                target="_blank"
-                className="group my-12 flex items-center px-4 md:mx-12">
+            <p className="my-4 inline-block md:mx-12 md:my-10 md:px-4">
+              <a href="#" target="_blank" className="group flex items-center ">
                 <span className="bg-gradient-to-r from-accentLight to-accentLight bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_2px] dark:from-accentDark dark:to-accentDark">
                   View my Résumé&nbsp;
                 </span>

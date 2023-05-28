@@ -4,7 +4,7 @@ export const experience = [
         company: 'LNMIIT',
         from: 'Jan 2023',
         to: 'April 2023',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolor quam iste sequi odio. Commodi provident explicabo illum aperiam id veritatis ut, cupiditate tempora mollitia rerum esse! Quo cupiditate blanditiis quibusdam odio necessitatibus ea incidunt? Corrupti commodi a quibusdam accusantium amet rerum tempora laudantium eligendi consectetur, nisi consequuntur quasi assumenda',
+        description: 'I have assisted ~80 students, and  my role has been centered around supporting and guiding students through their coursework.',
         tags: ['Omnet++', 'Cisco Packet Tracer']
     },
     {
@@ -12,7 +12,7 @@ export const experience = [
         company: 'LUSIP, LNMIIT',
         from: 'May 2022',
         to: 'July 2022',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolor quam iste sequi odio. Commodi provident explicabo illum aperiam id veritatis ut, cupiditate tempora mollitia rerum esse! Quo cupiditate blanditiis quibusdam odio necessitatibus ea incidunt? Corrupti commodi a quibusdam accusantium amet rerum tempora laudantium eligendi consectetur, nisi consequuntur quasi assumenda',
-        tags: ['ReactJS', 'Django', 'MySQL', 'MUI', 'Apache']
+        description: 'Built multiple user interface elements, including a homepage, login/registration screen, dashboard, options chain and other number of features, like an account management interface, a paper trading platform and an options chain system. Wrote several APIs to retrieve data from MySQL after having it undergo some computations based on business need for use in strategy execution, options trading, and paper trading.',
+        tags: ['ReactJS', 'Django', 'MySQL', 'MUI']
     }
 ]

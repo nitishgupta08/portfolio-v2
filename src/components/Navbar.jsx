@@ -36,7 +36,7 @@ function Navbar() {
       } sticky left-0 right-0 top-0 z-[100] transition-all duration-300 ease-out ${
         menu ? "h-screen backdrop-blur-xl" : ""
       } `}>
-      <div className="flex items-center justify-between p-3">
+      <header className="flex items-center justify-between p-3">
         <h1 className="font-sans text-3xl font-bold text-textLight transition-all duration-300 ease-out dark:text-textDark">
           nitish.dev
         </h1>
@@ -86,7 +86,7 @@ function Navbar() {
           </button>
           <ToggleTheme />
         </div>
-      </div>
+      </header>
 
       <Menu menu={menu} setMenu={setMenu} />
     </nav>
