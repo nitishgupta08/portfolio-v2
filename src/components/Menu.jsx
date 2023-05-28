@@ -2,11 +2,11 @@
 function Menu({ menu, setMenu }) {
   return (
     <div className={menu ? "block" : "hidden"}>
-      <div className="m-2 my-5 flex flex-col text-4xl text-textLight dark:text-textDark">
+      <div className="m-2 my-5 flex flex-col text-4xl  text-textDark">
         <a
           href="#about"
           onClick={() => setMenu(false)}
-          className={`mb-4 flex items-center rounded py-2 pl-3 pr-4 hover:bg-accentLight dark:hover:bg-accentDark ${
+          className={`mb-4 flex items-center rounded py-2 pl-3 pr-4  hover:bg-accentDark ${
             menu ? "animate-slide-down-1" : ""
           }`}>
           <svg
@@ -28,7 +28,7 @@ function Menu({ menu, setMenu }) {
         <a
           href="#projects"
           onClick={() => setMenu(false)}
-          className={`mb-4 flex items-center rounded py-2 pl-3 pr-4 hover:bg-accentLight dark:hover:bg-accentDark ${
+          className={`:hover:bg-accentDark mb-4 flex items-center rounded py-2 pl-3  pr-4 ${
             menu ? "animate-slide-down-2" : ""
           }`}>
           <svg
@@ -49,7 +49,7 @@ function Menu({ menu, setMenu }) {
         <a
           href="#contact"
           onClick={() => setMenu(false)}
-          className={`flex items-center rounded py-2 pl-3 pr-4 hover:bg-accentLight dark:hover:bg-accentDark ${
+          className={`flex items-center rounded py-2 pl-3 pr-4  hover:bg-accentDark ${
             menu ? "animate-slide-down-3" : ""
           }`}>
           <svg

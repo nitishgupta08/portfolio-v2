@@ -16,17 +16,17 @@ function Experience() {
         enterFrom="-translate-y-6 opacity-0"
         enterTo="translate-y-0 opacity-1">
         <div className="mt-16 p-4 md:flex md:justify-between md:p-0">
-          <h2 className="text-xl font-semibold uppercase text-accentLight dark:text-accentDark md:text-center md:text-2xl">
+          <h2 className="text-xl font-semibold uppercase  text-accentDark md:text-center md:text-2xl">
             Experience
           </h2>
 
           <div>
-            <div className="relative py-4 before:bg-[#a9a9a9] before:dark:bg-[#d3d3d3] md:col-span-8 md:mx-20 md:space-y-8 md:px-4 md:py-0 md:before:absolute md:before:-left-3 md:before:bottom-0 md:before:top-2 md:before:w-0.5">
+            <div className="relative py-4  before:bg-[#d3d3d3] md:col-span-8 md:mx-20 md:space-y-8 md:px-4 md:py-0 md:before:absolute md:before:-left-3 md:before:bottom-0 md:before:top-2 md:before:w-0.5">
               {experience.map((item, id) => {
                 return (
                   <div
                     key={id}
-                    className="mb-10 flex flex-col before:bg-accentLight  last:mb-0  before:dark:bg-accentDark md:relative md:my-0 md:before:absolute md:before:left-[-35px] md:before:top-2 md:before:z-[1] md:before:h-4 md:before:w-4 md:before:rounded-full">
+                    className="mb-10 flex flex-col before:bg-accentDark  last:mb-0 md:relative md:my-0 md:before:absolute md:before:left-[-35px] md:before:top-2 md:before:z-[1] md:before:h-4 md:before:w-4 md:before:rounded-full">
                     <h3 className="text-xl font-semibold tracking-wide md:text-2xl md:font-bold">
                       {item.designation}
                     </h3>
@@ -43,7 +43,7 @@ function Experience() {
                         return (
                           <span
                             key={id}
-                            className="my-1 mr-2 rounded  bg-accentLight px-3 py-1 text-xs font-medium text-textDark dark:bg-accentDark dark:text-textLight">
+                            className="my-1 mr-2 rounded bg-accentDark px-3 py-1 text-xs font-medium text-textLight ">
                             {tag}
                           </span>
                         );
@@ -55,7 +55,7 @@ function Experience() {
             </div>
             <p className="my-4 inline-block md:mx-12 md:my-10 md:px-4">
               <a href="#" target="_blank" className="group flex items-center ">
-                <span className="bg-gradient-to-r from-accentLight to-accentLight bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_2px] dark:from-accentDark dark:to-accentDark">
+                <span className="bg-gradient-to-r from-accentDark to-accentDark bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_2px]">
                   View my Résumé&nbsp;
                 </span>
 

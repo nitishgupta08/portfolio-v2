@@ -16,7 +16,7 @@ function Contact() {
         enterTo="translate-y-0 opacity-1">
         <div
           id="contact"
-          className="container mx-auto flex flex-col items-center  justify-center pt-20 text-textLight dark:text-textDark ">
+          className="container mx-auto flex flex-col items-center  justify-center pt-20  text-textDark ">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -41,8 +41,8 @@ function Contact() {
             </p>
 
             <div className="flex justify-center">
-              <button className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-buttonLight to-buttonDark p-0.5 font-medium hover:text-[white] focus:outline-none focus:ring-4 group-hover:from-buttonDark group-hover:to-buttonLight dark:text-[white]">
-                <span className="relative rounded-md bg-bgLight px-5 py-3 transition-all duration-75 ease-in group-hover:bg-opacity-0 dark:bg-bgDark">
+              <button className="group-hover:to-buttonLights group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-buttonLight to-buttonDark p-0.5 font-medium hover:text-[white] focus:outline-none focus:ring-4 group-hover:from-buttonDark">
+                <span className="relative rounded-md bg-bgDark px-5 py-3 transition-all duration-75 ease-in group-hover:bg-opacity-0">
                   <a href="mailto:nitishkg.88@gmail.com">
                     <span className="">Say Hello</span>
                   </a>

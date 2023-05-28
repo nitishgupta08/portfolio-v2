@@ -8,7 +8,7 @@ function ListProjects() {
         return (
           <div
             key={id}
-            className="my-4 flex flex-col items-center rounded-lg border border-[#a9a9a9]/10  shadow dark:border-[#d3d3d3]/10 md:mx-20 md:mt-0 md:flex-row">
+            className="my-4 flex flex-col items-center rounded-lg border  border-[#d3d3d3]/10 shadow md:mx-20 md:mt-0 md:flex-row">
             <img
               className="rounded-t-lg object-cover md:h-auto md:w-72 md:rounded-none md:rounded-l-lg"
               src={item.imgSrc}
@@ -26,7 +26,7 @@ function ListProjects() {
                   return (
                     <span
                       key={id}
-                      className="my-1 mr-1 rounded bg-accentLight px-3 py-1 text-xs font-medium text-textDark dark:bg-accentDark dark:text-textLight">
+                      className="my-1 mr-1 rounded bg-accentDark px-3 py-1 text-xs font-medium text-textLight ">
                       {tag}
                     </span>
                   );
@@ -40,7 +40,7 @@ function ListProjects() {
                     href={item.linklink}
                     target="_blank"
                     rel="noreferrer"
-                    className=" transition-all duration-100 ease-linear hover:text-accentLight dark:hover:text-accentDark">
+                    className=" transition-all duration-100 ease-linear  hover:text-accentDark">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -62,7 +62,7 @@ function ListProjects() {
                     href={item.githubLink}
                     target="_blank"
                     rel="noreferrer"
-                    className=" transition-all duration-100 ease-linear hover:text-accentLight dark:hover:text-accentDark">
+                    className=" transition-all duration-100 ease-linear  hover:text-accentDark">
                     <svg
                       className="h-8 w-8"
                       fill="currentColor"
@@ -86,7 +86,7 @@ function ListProjects() {
         <Link
           to="project-archive"
           className="group mx-2 my-12 flex items-center md:mx-20">
-          <span className="bg-gradient-to-r from-accentLight to-accentLight bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_2px] dark:from-accentDark dark:to-accentDark">
+          <span className="bg-gradient-to-r  from-accentDark to-accentDark bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_2px]">
             View Full Project Archive&nbsp;
           </span>
 

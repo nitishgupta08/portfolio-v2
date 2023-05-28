@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { Transition } from "@headlessui/react";
 import { useInView } from "react-intersection-observer";
 import ListArchive from "../components/ListArchive";
-import ToggleTheme from "../components/ToggleTheme";
 
 function ProjectArchive() {
   const [ref, inView] = useInView({
@@ -16,8 +15,8 @@ function ProjectArchive() {
         enter="transition-all duration-500 ease-out"
         enterFrom="-translate-y-6 opacity-0"
         enterTo="translate-y-0 opacity-1">
-        <div className="container mx-auto p-4 text-textLight dark:text-textDark lg:px-32">
-          <p className="my-4 inline-block text-buttonLight dark:text-buttonDark">
+        <div className="container mx-auto p-4  text-textDark lg:px-32">
+          <p className="my-4 inline-block  text-buttonDark">
             <Link to="/" className="group mt-12 flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -33,15 +32,14 @@ function ProjectArchive() {
                 />
               </svg>
               &nbsp;
-              <span className="bg-gradient-to-r from-accentLight to-accentLight bg-[length:0%_2px] bg-left-bottom bg-no-repeat text-xl transition-all duration-500 ease-out group-hover:bg-[length:100%_2px] dark:from-accentDark dark:to-accentDark">
+              <span className="bg-gradient-to-r  from-accentDark to-accentDark bg-[length:0%_2px] bg-left-bottom bg-no-repeat text-xl transition-all duration-500 ease-out group-hover:bg-[length:100%_2px]">
                 nitish.dev
               </span>
             </Link>
           </p>
-          <div className="flex justify-between">
-            <h1 className="text-4xl font-bold md:text-7xl">All Projects</h1>
-            <ToggleTheme />
-          </div>
+
+          <h1 className="text-4xl font-bold md:text-7xl">All Projects</h1>
+
           <ListArchive />
         </div>
       </Transition>

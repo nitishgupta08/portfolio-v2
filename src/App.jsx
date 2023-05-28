@@ -9,7 +9,7 @@ import ProjectArchive from "./screens/ProjectArchive";
 
 function App() {
   return (
-    <div className="bg-bgLight dark:bg-bgDark">
+    <div className="bg-bgDark">
       <Routes>
         <Route
           path=""

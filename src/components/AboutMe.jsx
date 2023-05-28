@@ -16,7 +16,7 @@ function AboutMe() {
         enterFrom="-translate-y-6 opacity-0"
         enterTo="translate-y-0 opacity-1">
         <div className="p-4 md:flex md:justify-between md:p-0">
-          <h2 className="text-xl font-semibold uppercase text-accentLight dark:text-accentDark md:text-center  md:text-2xl">
+          <h2 className="text-xl font-semibold uppercase text-accentDark md:text-center  md:text-2xl">
             About
           </h2>
 

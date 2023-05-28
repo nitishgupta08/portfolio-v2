@@ -1,7 +1,7 @@
 function Footer() {
   return (
-    <footer className=" mx-auto w-full bg-bgLight p-4 py-6 text-textLight dark:bg-bgDark dark:text-textDark lg:px-64">
-      <hr className="my-6 hidden border-[#a9a9a9] dark:border-[#d3d3d3] sm:mx-auto md:block lg:my-8" />
+    <footer className=" t mx-auto  w-full bg-bgDark p-4 py-6 text-textDark lg:px-64">
+      <hr className="my-6 hidden  border-[#d3d3d3] sm:mx-auto md:block lg:my-8" />
       <div className="md:flex md:flex-row-reverse md:items-center md:justify-between">
         <Socials />
         <p className="text-center text-sm opacity-80 md:text-start md:text-lg">
@@ -19,7 +19,7 @@ const Socials = () => {
         href="https://www.instagram.com/_nitishgupta/"
         target="_blank"
         rel="noreferrer"
-        className="mx-3 my-10 transition-all duration-100 ease-linear hover:text-accentLight dark:hover:text-accentDark md:my-0">
+        className="mx-3 my-10 transition-all duration-100 ease-linear  hover:text-accentDark md:my-0">
         <svg
           className="h-8 w-8"
           fill="currentColor"
@@ -37,7 +37,7 @@ const Socials = () => {
         href="https://twitter.com/_nitishgupta"
         target="_blank"
         rel="noreferrer"
-        className="mx-3  my-10 transition-all duration-100 ease-linear hover:text-accentLight dark:hover:text-accentDark md:my-0">
+        className="mx-3  my-10 transition-all duration-100 ease-linear  hover:text-accentDark md:my-0">
         <svg
           className="h-8 w-8"
           fill="currentColor"
@@ -51,7 +51,7 @@ const Socials = () => {
         href="https://github.com/nitishgupta08"
         target="_blank"
         rel="noreferrer"
-        className="mx-3 my-10 transition-all duration-100 ease-linear hover:text-accentLight dark:hover:text-accentDark md:my-0">
+        className="mx-3 my-10 transition-all duration-100 ease-linear  hover:text-accentDark md:my-0">
         <svg
           className="h-8 w-8"
           fill="currentColor"
@@ -69,7 +69,7 @@ const Socials = () => {
         href="https://www.linkedin.com/in/nitishgupta24/"
         target="_blank"
         rel="noreferrer"
-        className="mx-3 my-10 transition-all duration-100 ease-linear hover:text-accentLight dark:hover:text-accentDark md:my-0">
+        className="mx-3 my-10 transition-all duration-100 ease-linear hover:text-accentDark md:my-0">
         <svg
           className="h-8 w-8"
           xmlns="http://www.w3.org/2000/svg"

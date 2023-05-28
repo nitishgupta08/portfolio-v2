@@ -16,11 +16,11 @@ function Skills() {
         enterFrom="-translate-y-6 opacity-0"
         enterTo="translate-y-0 opacity-1">
         <div className="mt-16 p-4 md:flex md:p-0">
-          <h2 className="text-xl font-semibold uppercase text-accentLight dark:text-accentDark md:text-center md:text-2xl">
+          <h2 className="text-xl font-semibold uppercase text-accentDark md:text-center md:text-2xl">
             Skills
           </h2>
 
-          <div className="flex flex-1 flex-wrap justify-between py-5 text-textLight dark:text-textDark md:px-32 md:py-0">
+          <div className="flex flex-1 flex-wrap justify-between py-5  text-textDark md:px-32 md:py-0">
             <div className="w-1/2  md:w-auto ">
               <h3 className="font-semibold uppercase md:text-xl">Languages</h3>
               <ul>
@@ -70,7 +70,7 @@ function Skills() {
                         href={item.link}
                         target="_blank"
                         rel="noreferrer"
-                        className="group flex items-center hover:text-accentLight dark:hover:text-accentDark">
+                        className="group flex items-center  hover:text-accentDark">
                         <span>{item.name}</span>
                         &nbsp;
                         <svg

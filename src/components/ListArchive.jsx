@@ -23,9 +23,7 @@ function ListArchive() {
         <tbody>
           {projectsArchive.map((item, id) => {
             return (
-              <tr
-                key={id}
-                className="dark: border-b border-[#a9a9a9]/50 dark:border-[#d3d3d3]/20">
+              <tr key={id} className=" border-b  border-[#d3d3d3]/20">
                 <td className="whitespace-nowrap py-4 font-medium">
                   {item.title}
                 </td>
@@ -38,7 +36,7 @@ function ListArchive() {
                       return (
                         <span
                           key={id}
-                          className="m-1 rounded  bg-accentLight px-3 py-1 text-xs font-medium text-textDark dark:bg-accentDark dark:text-textLight">
+                          className="m-1 rounded   bg-accentDark px-3 py-1 text-xs  font-medium text-textLight">
                           {tag}
                         </span>
                       );
@@ -52,7 +50,7 @@ function ListArchive() {
                         href={item.linklink}
                         target="_blank"
                         rel="noreferrer"
-                        className=" transition-all duration-100 ease-linear hover:text-accentLight dark:hover:text-accentDark">
+                        className=" transition-all duration-100 ease-linear  hover:text-accentDark">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
@@ -74,7 +72,7 @@ function ListArchive() {
                         href={item.githubLink}
                         target="_blank"
                         rel="noreferrer"
-                        className=" transition-all duration-100 ease-linear hover:text-accentLight dark:hover:text-accentDark">
+                        className=" transition-all duration-100 ease-linear  hover:text-accentDark">
                         <svg
                           className="h-6 w-6"
                           fill="currentColor"
