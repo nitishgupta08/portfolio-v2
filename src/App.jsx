@@ -9,22 +9,24 @@ import ProjectArchive from "./screens/ProjectArchive";
 
 function App() {
   return (
-    <Routes>
-      <Route
-        path=""
-        element={
-          <div className="bg-bgLight dark:bg-bgDark">
-            <Navbar />
-            <Hero />
-            <About />
-            <Projects />
-            <Contacts />
-            <Footer />
-          </div>
-        }
-      />
-      <Route path="project-archive" element={<ProjectArchive />} />
-    </Routes>
+    <div className="bg-bgLight dark:bg-bgDark">
+      <Routes>
+        <Route
+          path=""
+          element={
+            <>
+              <Navbar />
+              <Hero />
+              <About />
+              <Projects />
+              <Contacts />
+              <Footer />
+            </>
+          }
+        />
+        <Route path="project-archive" element={<ProjectArchive />} />
+      </Routes>
+    </div>
   );
 }
 

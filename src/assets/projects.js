@@ -4,7 +4,7 @@ export const projects = [
         linklink: 'https://nkg-cc.netlify.app/',
         githubLink: 'https://github.com/nitishgupta08/CodeCollab',
         imgSrc: '/codecollab.jpg',
-        from: 'Jan 2023',
+        from: 'March 2023',
         to: 'April 2023',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolor quam iste sequi odio. Commodi provident explicabo illum aperiam id veritatis ut, cupiditate tempora mollitia rerum esse! Quo cupiditate blanditiis quibusdam odio necessitatibus ea incidunt? Corrupti commodi a quibusdam accusantium amet rerum tempora laudantium eligendi consectetur, nisi consequuntur quasi assumenda',
         tags: ['ReactJS', 'NodeJS', 'MongoDB', 'Socket.io', 'MUI']

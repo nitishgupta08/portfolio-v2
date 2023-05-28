@@ -1,6 +1,7 @@
 import { projects } from "../assets/projects";
 import { Transition } from "@headlessui/react";
 import { useInView } from "react-intersection-observer";
+import { Link } from "react-router-dom";
 
 function ListProjects() {
   const [ref, inView] = useInView({
@@ -97,9 +98,8 @@ function ListProjects() {
             );
           })}
           <p className="inline-block ">
-            <a
-              href="#"
-              target="_blank"
+            <Link
+              to="project-archive"
               className="group mx-2 my-12 flex items-center md:mx-20">
               <span className="bg-gradient-to-r from-accentLight to-accentLight bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_2px] dark:from-accentDark dark:to-accentDark">
                 View Full Project Archive&nbsp;
@@ -118,7 +118,7 @@ function ListProjects() {
                   d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
                 />
               </svg>
-            </a>
+            </Link>
           </p>
         </div>
       </Transition>
