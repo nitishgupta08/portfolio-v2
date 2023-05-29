@@ -4,7 +4,7 @@ import About from "./screens/About";
 import Projects from "./screens/Projects";
 import Contacts from "./screens/Contact";
 import Footer from "./screens/Footer";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import ProjectArchive from "./screens/ProjectArchive";
 import ReactGA from "react-ga";
 import { useEffect } from "react";
@@ -12,9 +12,12 @@ import { useEffect } from "react";
 ReactGA.initialize(import.meta.env.VITE_TRACKING_ID);
 
 function App() {
+  const location = useLocation();
+
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
-  }, []);
+    console.log(location.pathname);
+    ReactGA.pageview(location.pathname);
+  }, [location.pathname]);
 
   return (
     <div className="bg-bgDark">
