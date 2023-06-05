@@ -1,8 +1,12 @@
 import { projectsArchive } from "../assets/projectsArchive";
 
-function ListArchive() {
+// eslint-disable-next-line react/prop-types
+function ListArchive({ inView }) {
   return (
-    <div>
+    <div
+      className={`transition-all duration-500 ease-out ${
+        inView ? "opacity-1 translate-y-0" : "translate-y-[10%] opacity-0"
+      }`}>
       <table className="my-5 w-full text-left md:my-10">
         <thead className="uppercase">
           <tr>

@@ -1,6 +1,16 @@
+import { useInView } from "react-intersection-observer";
+
 function Footer() {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
   return (
-    <footer className=" t mx-auto  w-full bg-bgDark p-4 py-6 text-textDark lg:px-64">
+    <footer
+      ref={ref}
+      className={`mx-auto  w-full bg-bgDark p-4 py-6 text-textDark transition-all duration-[1000ms] ease-out lg:px-64 ${
+        inView ? "opacity-1 translate-y-0" : "translate-y-[100%] opacity-0"
+      }`}>
       <hr className="my-6 hidden  border-[#d3d3d3] sm:mx-auto md:block lg:my-8" />
       <div className="md:flex md:flex-row-reverse md:items-center md:justify-between">
         <Socials />
