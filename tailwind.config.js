@@ -19,9 +19,6 @@ export default {
 
     },
     extend: {
-      transitionProperty: {
-        'height': 'height',
-      },
       keyframes: {
         slideInDown: {
           '0%': {
@@ -31,14 +28,6 @@ export default {
           '100%': {
             transform: 'translateY(0)',
             opacity: 1,
-          }
-        },
-        containerDown: {
-          '0%': {
-            height: 0,
-          },
-          '100%': {
-            height: '50vh'
           }
         },
 
@@ -56,7 +45,6 @@ export default {
 
       animation: {
         'wave': 'wave 1.5s infinite',
-        'containerDown': 'containerDown .3s ease-out',
         'slide-down-1': 'slideInDown 0.2s ease-out',
         'slide-down-2': 'slideInDown 0.4s ease-out',
         'slide-down-3': 'slideInDown 0.6s ease-out',

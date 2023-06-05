@@ -1,23 +1,23 @@
+import { Transition } from "@headlessui/react";
 import { useInView } from "react-intersection-observer";
 
 function Contact() {
-  const { ref, inView } = useInView({
+  const [ref1, inView1] = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
 
   return (
-    <div ref={ref}>
-      <div
-        id="contact"
-        className="container mx-auto flex flex-col items-center  justify-center pt-20  text-textDark ">
-        <div>
-          <div
-            className={`transition-all duration-500 ease-out ${
-              inView
-                ? "opacity-1 translate-x-0"
-                : "-translate-x-[100%] opacity-0"
-            }`}>
+    <div ref={ref1}>
+      <Transition
+        show={inView1}
+        enter="transition-all duration-500 ease-out"
+        enterFrom="-translate-y-6 opacity-0"
+        enterTo="translate-y-0 opacity-1">
+        <div
+          id="contact"
+          className="container mx-auto flex flex-col items-center  justify-center pt-20  text-textDark ">
+          <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -31,14 +31,7 @@ function Contact() {
                 d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
               />
             </svg>
-          </div>
 
-          <div
-            className={`transition-all duration-[750ms] ease-out ${
-              inView
-                ? "opacity-1 translate-y-0"
-                : "translate-y-[100%] opacity-0"
-            }`}>
             <h2 className="text-center text-4xl font-bold lg:text-5xl">
               Get in touch
             </h2>
@@ -58,7 +51,7 @@ function Contact() {
             </div>
           </div>
         </div>
-      </div>
+      </Transition>
     </div>
   );
 }
