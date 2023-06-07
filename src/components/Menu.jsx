@@ -28,7 +28,7 @@ function Menu({ menu, setMenu }) {
         <a
           href="#projects"
           onClick={() => setMenu(false)}
-          className={`:hover:bg-accentDark mb-4 flex items-center rounded py-2 pl-3  pr-4 ${
+          className={`mb-4 flex items-center rounded py-2 pl-3 pr-4  hover:bg-accentDark ${
             menu ? "animate-slide-down-2" : ""
           }`}>
           <svg

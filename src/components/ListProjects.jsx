@@ -1,14 +1,21 @@
 import { projects } from "../assets/projects";
 import { Link } from "react-router-dom";
+import { useInView } from "react-intersection-observer";
 
 function ListProjects() {
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+  });
   return (
-    <div>
+    <div ref={ref}>
       {projects.map((item, id) => {
         return (
           <div
             key={id}
-            className="my-4 flex flex-col items-center rounded-lg border  border-[#d3d3d3]/10 shadow md:mx-20 md:mt-0 md:flex-row">
+            className={`my-4 flex flex-col items-center rounded-lg border  border-[#d3d3d3]/10 shadow transition-all duration-[1500ms] ease-out md:mx-20  md:mt-0 md:flex-row ${
+              inView ? "opacity-1 translate-y-0" : "translate-y-[50%] opacity-0"
+            }`}>
             <img
               className="rounded-t-lg object-cover md:h-auto md:w-72 md:rounded-none md:rounded-l-lg"
               src={item.imgSrc}

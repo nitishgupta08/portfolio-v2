@@ -1,21 +1,22 @@
 import { Link } from "react-router-dom";
-import { Transition } from "@headlessui/react";
+
 import { useInView } from "react-intersection-observer";
 import ListArchive from "../components/ListArchive";
 
 function ProjectArchive() {
-  const [ref, inView] = useInView({
+  const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0,
+    threshold: 0.1,
   });
   return (
     <div ref={ref}>
-      <Transition
-        show={inView}
-        enter="transition-all duration-500 ease-out"
-        enterFrom="-translate-y-6 opacity-0"
-        enterTo="translate-y-0 opacity-1">
-        <div className="container mx-auto p-4  text-textDark lg:px-32">
+      <div className="container mx-auto p-4  text-textDark lg:px-32 ">
+        <div
+          className={` transition-all duration-500 ease-out  ${
+            inView
+              ? "opacity-1 md:translate-x-0"
+              : "opacity-0 md:translate-x-[100%]"
+          }`}>
           <p className="my-4 inline-block  text-buttonDark">
             <Link to="/" className="group mt-12 flex items-center">
               <svg
@@ -32,17 +33,23 @@ function ProjectArchive() {
                 />
               </svg>
               &nbsp;
-              <span className="bg-gradient-to-r  from-accentDark to-accentDark bg-[length:0%_2px] bg-left-bottom bg-no-repeat text-xl transition-all duration-500 ease-out group-hover:bg-[length:100%_2px]">
+              <span className="bg-gradient-to-r  from-accentDark to-accentDark bg-[length:0%_2px] bg-left-bottom bg-no-repeat text-xl transition-all duration-500 ease-out  group-hover:bg-[length:100%_2px]">
                 nitish.dev
               </span>
             </Link>
           </p>
-
-          <h1 className="text-4xl font-bold md:text-7xl">All Projects</h1>
-
-          <ListArchive />
         </div>
-      </Transition>
+        <h1
+          className={`text-4xl font-bold transition-all duration-500 ease-out md:text-7xl ${
+            inView
+              ? "opacity-1 md:translate-x-0"
+              : "opacity-0 md:-translate-x-[100%]"
+          }`}>
+          All Projects
+        </h1>
+
+        <ListArchive />
+      </div>
     </div>
   );
 }
