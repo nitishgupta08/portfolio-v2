@@ -14,14 +14,14 @@ function App() {
         <Route
           path=""
           element={
-            <>
+            <main>
               <Navbar />
               <Hero />
               <About />
               <Projects />
               <Contacts />
               <Footer />
-            </>
+            </main>
           }
         />
         <Route path="project-archive" element={<ProjectArchive />} />

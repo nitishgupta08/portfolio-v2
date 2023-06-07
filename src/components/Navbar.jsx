@@ -81,6 +81,7 @@ function Navbar() {
             </div>
 
             <button
+              aria-label="menu bar"
               className={`flex h-8 w-10 flex-col items-center rounded hover:bg-accentDark md:hidden ${
                 menu ? "justify-top" : "justify-center"
               }`}

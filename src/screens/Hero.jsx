@@ -8,11 +8,11 @@ function Hero() {
   return (
     <div ref={ref}>
       <div className="container mx-auto h-screen px-8 py-56  text-textDark  md:py-64">
-        <h3 className="text-3xl lg:text-5xl">
+        <h1 className="text-3xl lg:text-5xl">
           Hey! <span className="inline-block animate-wave">👋</span>
-        </h3>
+        </h1>
 
-        <h1 className="mt-8 text-4xl md:text-7xl lg:text-8xl">
+        <h2 className="mt-8 text-4xl md:text-7xl lg:text-8xl">
           I&#39;m{" "}
           <span
             className={`font-bold text-accentDark transition-all duration-500 ease-out ${
@@ -20,7 +20,7 @@ function Hero() {
             }`}>
             Nitish Gupta
           </span>
-        </h1>
+        </h2>
         <div
           className={`transition-all duration-1000 ease-out ${
             inView ? "opacity-1 translate-y-0" : "translate-y-[50%] opacity-0"
