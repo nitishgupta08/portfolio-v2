@@ -67,6 +67,7 @@ function Skills() {
                 return (
                   <li key={id} className="opacity-90">
                     <a
+                      aria-label="coding platforms links"
                       href={item.link}
                       target="_blank"
                       rel="noreferrer"

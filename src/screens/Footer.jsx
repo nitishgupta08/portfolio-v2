@@ -16,6 +16,7 @@ const Socials = () => {
   return (
     <div className="flex items-center justify-center ">
       <a
+        aria-label="instagram"
         href="https://www.instagram.com/_nitishgupta/"
         target="_blank"
         rel="noreferrer"
@@ -34,6 +35,7 @@ const Socials = () => {
         <span className="sr-only">Instagram page</span>
       </a>
       <a
+        aria-label="twitter"
         href="https://twitter.com/_nitishgupta"
         target="_blank"
         rel="noreferrer"
@@ -48,6 +50,7 @@ const Socials = () => {
         <span className="sr-only">Twitter page</span>
       </a>
       <a
+        aria-label="github"
         href="https://github.com/nitishgupta08"
         target="_blank"
         rel="noreferrer"
@@ -66,6 +69,7 @@ const Socials = () => {
         <span className="sr-only">GitHub account</span>
       </a>
       <a
+        aria-label="linkedin"
         href="https://www.linkedin.com/in/nitishgupta24/"
         target="_blank"
         rel="noreferrer"

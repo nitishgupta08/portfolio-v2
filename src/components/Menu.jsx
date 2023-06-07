@@ -5,6 +5,7 @@ function Menu({ menu, setMenu }) {
       <div className="m-2 my-5 flex flex-col text-4xl  text-textDark">
         <a
           href="#about"
+          aria-label="about"
           onClick={() => setMenu(false)}
           className={`mb-4 flex items-center rounded py-2 pl-3 pr-4  hover:bg-accentDark ${
             menu ? "animate-slide-down-1" : ""
@@ -27,6 +28,7 @@ function Menu({ menu, setMenu }) {
         </a>
         <a
           href="#projects"
+          aria-label="projects"
           onClick={() => setMenu(false)}
           className={`mb-4 flex items-center rounded py-2 pl-3 pr-4  hover:bg-accentDark ${
             menu ? "animate-slide-down-2" : ""
@@ -48,6 +50,7 @@ function Menu({ menu, setMenu }) {
         </a>
         <a
           href="#contact"
+          aria-label="contact"
           onClick={() => setMenu(false)}
           className={`flex items-center rounded py-2 pl-3 pr-4  hover:bg-accentDark ${
             menu ? "animate-slide-down-3" : ""

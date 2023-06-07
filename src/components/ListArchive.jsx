@@ -58,6 +58,7 @@ function ListArchive() {
                       {item.linklink && (
                         <a
                           href={item.linklink}
+                          aria-label="live link"
                           target="_blank"
                           rel="noreferrer"
                           className=" transition-all duration-100 ease-linear  hover:text-accentDark">
@@ -80,6 +81,7 @@ function ListArchive() {
                       {item.githubLink && (
                         <a
                           href={item.githubLink}
+                          aria-label="github link"
                           target="_blank"
                           rel="noreferrer"
                           className=" transition-all duration-100 ease-linear  hover:text-accentDark">

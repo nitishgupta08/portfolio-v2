@@ -28,9 +28,11 @@ function Contact() {
           </p>
 
           <div className="flex justify-center">
-            <button className="group-hover:to-buttonLights group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-buttonLight to-buttonDark p-0.5 font-medium hover:text-[white] focus:outline-none focus:ring-4 group-hover:from-buttonDark">
+            <button
+              aria-label="say hello"
+              className="group-hover:to-buttonLights group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-buttonLight to-buttonDark p-0.5 font-medium hover:text-[white] focus:outline-none focus:ring-4 group-hover:from-buttonDark">
               <span className="relative rounded-md bg-bgDark px-5 py-3 transition-all duration-75 ease-in group-hover:bg-opacity-0">
-                <a href="mailto:nitishkg.88@gmail.com">
+                <a aria-label="say hello" href="mailto:nitishkg.88@gmail.com">
                   <span className="">Say Hello</span>
                 </a>
               </span>

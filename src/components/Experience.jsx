@@ -55,7 +55,11 @@ function Experience() {
             })}
           </div>
           <p className="my-4 inline-block md:mx-12 md:my-10 md:px-4">
-            <a href="#" target="_blank" className="group flex items-center ">
+            <a
+              href="#"
+              target="_blank"
+              aria-label="view my resume"
+              className="group flex items-center ">
               <span className="bg-gradient-to-r from-accentDark to-accentDark bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_2px]">
                 View my Résumé&nbsp;
               </span>

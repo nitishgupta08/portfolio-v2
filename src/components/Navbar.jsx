@@ -31,6 +31,7 @@ function Navbar() {
   return (
     <>
       <button
+        aria-label="scroll to top"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         className={`fixed bottom-2 right-2 text-3xl transition-all duration-500 ease-out md:bottom-5 md:right-5 md:text-5xl ${
           top ? "opacity-1" : "opacity-0"
@@ -52,6 +53,7 @@ function Navbar() {
           <div className="flex items-center justify-center text-textDark ">
             <div className="mr-5 hidden text-xl font-semibold md:block">
               <a
+                aria-label="about"
                 className="group mr-5 transition-all duration-300 ease-in-out"
                 href="#about">
                 <span className="bg-gradient-to-r  from-accentDark to-accentDark bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_2px]">
@@ -60,6 +62,7 @@ function Navbar() {
               </a>
 
               <a
+                aria-label="projects"
                 className="group mr-5 transition-all duration-300 ease-in-out"
                 href="#projects">
                 <span className="bg-gradient-to-r  from-accentDark to-accentDark bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_2px]">
@@ -68,6 +71,7 @@ function Navbar() {
               </a>
 
               <a
+                aria-label="contact"
                 className="group  transition-all duration-300 ease-in-out"
                 href="#contact">
                 <span className="bg-gradient-to-r  from-accentDark to-accentDark bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_2px]">
