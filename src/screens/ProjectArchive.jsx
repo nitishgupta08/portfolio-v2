@@ -13,9 +13,7 @@ function ProjectArchive() {
       <div className="container mx-auto p-4  text-textDark lg:px-32 ">
         <div
           className={` transition-all duration-500 ease-out  ${
-            inView
-              ? "opacity-1 md:translate-x-0"
-              : "opacity-0 md:translate-x-[100%]"
+            inView ? "opacity-1 " : "opacity-0 "
           }`}>
           <p className="my-4 inline-block  text-buttonDark">
             <Link to="/" className="group mt-12 flex items-center">
@@ -41,9 +39,7 @@ function ProjectArchive() {
         </div>
         <h1
           className={`text-4xl font-bold transition-all duration-500 ease-out md:text-7xl ${
-            inView
-              ? "opacity-1 md:translate-x-0"
-              : "opacity-0 md:-translate-x-[100%]"
+            inView ? "opacity-1" : "opacity-0"
           }`}>
           All Projects
         </h1>

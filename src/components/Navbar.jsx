@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import CustomLink from "./ui/CustomLink";
 import Menu from "./Menu";
 
 function Navbar() {
@@ -52,32 +53,27 @@ function Navbar() {
 
           <div className="flex items-center justify-center text-textDark ">
             <div className="mr-5 hidden text-xl font-semibold md:block">
-              <a
-                aria-label="about"
-                className="group mr-5 transition-all duration-300 ease-in-out"
-                href="#about">
-                <span className="bg-gradient-to-r  from-accentDark to-accentDark bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_2px]">
-                  About
-                </span>
-              </a>
-
-              <a
-                aria-label="projects"
-                className="group mr-5 transition-all duration-300 ease-in-out"
-                href="#projects">
-                <span className="bg-gradient-to-r  from-accentDark to-accentDark bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_2px]">
-                  Projects
-                </span>
-              </a>
-
-              <a
-                aria-label="contact"
-                className="group  transition-all duration-300 ease-in-out"
-                href="#contact">
-                <span className="bg-gradient-to-r  from-accentDark to-accentDark bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_2px]">
-                  Contact
-                </span>
-              </a>
+              <CustomLink
+                link="#about"
+                className={
+                  "group mr-5 transition-all duration-300 ease-in-out"
+                }>
+                About
+              </CustomLink>
+              <CustomLink
+                link="#projects"
+                className={
+                  "group mr-5 transition-all duration-300 ease-in-out"
+                }>
+                Projects
+              </CustomLink>
+              <CustomLink
+                link="#contact"
+                className={
+                  "group mr-5 transition-all duration-300 ease-in-out"
+                }>
+                Contact
+              </CustomLink>
             </div>
 
             <button

@@ -6,7 +6,7 @@ function Hero() {
     threshold: 0.1,
   });
   return (
-    <div ref={ref}>
+    <section ref={ref}>
       <div className="container mx-auto h-screen px-8 py-56  text-textDark  md:py-64">
         <h1 className="text-3xl lg:text-5xl">
           Hey! <span className="inline-block animate-wave">👋</span>
@@ -32,7 +32,7 @@ function Hero() {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

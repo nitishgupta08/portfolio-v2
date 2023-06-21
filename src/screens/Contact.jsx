@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <div>
+    <section>
       <div
         id="contact"
         className="container mx-auto flex flex-col items-center  justify-center pt-20  text-textDark ">
@@ -40,7 +40,7 @@ function Contact() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

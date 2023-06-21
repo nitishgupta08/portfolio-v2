@@ -1,5 +1,6 @@
 import { experience } from "../assets/experience";
 import { useInView } from "react-intersection-observer";
+import Pill from "./ui/Pill";
 
 function Experience() {
   const { ref, inView } = useInView({
@@ -41,13 +42,7 @@ function Experience() {
 
                   <div className="my-3 flex flex-wrap">
                     {item.tags.map((tag, id) => {
-                      return (
-                        <span
-                          key={id}
-                          className="my-1 mr-2 rounded bg-accentDark px-3 py-1 text-xs font-medium text-textLight ">
-                          {tag}
-                        </span>
-                      );
+                      return <Pill key={id}>{tag}</Pill>;
                     })}
                   </div>
                 </div>

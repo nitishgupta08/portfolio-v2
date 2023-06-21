@@ -7,7 +7,7 @@ function Projects() {
     threshold: 0.1,
   });
   return (
-    <div ref={ref}>
+    <section ref={ref}>
       <div
         id="projects"
         className="container mx-auto px-4 pt-16  text-textDark lg:px-16">
@@ -23,7 +23,7 @@ function Projects() {
           <ListProjects />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
