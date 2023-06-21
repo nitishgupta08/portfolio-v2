@@ -34,7 +34,7 @@ function Navbar() {
       <button
         aria-label="scroll to top"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className={`fixed bottom-2 right-2 text-3xl transition-all duration-500 ease-out md:bottom-5 md:right-5 md:text-5xl ${
+        className={`z-[100] fixed bottom-2 right-2 text-3xl transition-all duration-500 ease-out md:bottom-5 md:right-5 md:text-5xl ${
           top ? "opacity-1" : "opacity-0"
         }`}>
         ☝️
