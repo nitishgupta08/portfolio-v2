@@ -7,7 +7,7 @@ export const projects = [
         from: 'March 2023',
         to: 'April 2023',
         description: 'An online code editor that allows users to work together on coding projects in a shared space. Implemented several APIs that perform CRUD operations on users and the spaces they own. Users can  choose variety of languages and themes.',
-        tags: ['ReactJS', 'NodeJS', 'MongoDB', 'Socket.io', 'MUI']
+        tags: ['ReactJS', 'NodeJS', 'MongoDB', 'Socket.io', 'MUI', 'Codemirror']
     },
     {
         title: 'algotradersonline',

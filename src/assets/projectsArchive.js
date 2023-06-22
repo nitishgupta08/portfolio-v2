@@ -1,5 +1,21 @@
 export const projectsArchive = [
     {
+        title: 'ListApp',
+        linklink: null,
+        githubLink: 'https://github.com/nitishgupta08/list-app',
+        date: 'May 2023',
+        tags: ['Typescript']
+
+    },
+    {
+        title: 'MERN Auth',
+        linklink: null,
+        githubLink: 'https://github.com/nitishgupta08/mern-auth',
+        date: 'May 2023',
+        tags: ['MERN', 'Redux', 'JWT', 'bcryptjs', 'cookie-parser']
+
+    },
+    {
         title: 'CodeForges',
         linklink: 'https://codeforges.netlify.app/',
         githubLink: 'https://github.com/nitishgupta08/CodeForges',
