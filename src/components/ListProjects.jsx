@@ -16,8 +16,8 @@ function ListProjects() {
         return (
           <div
             key={id}
-            className={`my-4 flex flex-col items-center rounded-lg border  border-[#d3d3d3]/10 shadow transition-all duration-[1500ms] ease-out md:mx-20  md:mt-0 md:flex-row ${
-              inView ? "opacity-1 translate-y-0" : "translate-y-[50%] opacity-0"
+            className={`my-4 flex flex-col items-center rounded-lg border  border-[#d3d3d3]/10 shadow transition-all duration-[1000ms] ease-out md:mx-20  md:mt-0 md:flex-row ${
+              inView ? "opacity-1 translate-y-0" : "translate-y-[10%] opacity-0"
             }`}>
             <div>
               <img

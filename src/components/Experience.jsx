@@ -24,10 +24,10 @@ function Experience() {
               return (
                 <div
                   key={id}
-                  className={`mb-10 flex flex-col transition-all  duration-[1500ms] ease-out  before:bg-accentDark last:mb-0 md:relative md:my-0 md:duration-1000 md:before:absolute md:before:left-[-35px] md:before:top-2 md:before:z-[1] md:before:h-4  md:before:w-4 md:before:rounded-full ${
+                  className={`mb-10 flex flex-col transition-all  duration-[1000ms] ease-out  before:bg-accentDark last:mb-0 md:relative md:my-0 md:duration-1000 md:before:absolute md:before:left-[-35px] md:before:top-2 md:before:z-[1] md:before:h-4  md:before:w-4 md:before:rounded-full ${
                     inView
                       ? "opacity-1 translate-y-0"
-                      : "translate-y-[20%] opacity-0"
+                      : "translate-y-[10%] opacity-0"
                   } `}>
                   <h3 className="text-xl font-semibold tracking-wide md:text-2xl md:font-bold">
                     {item.designation}

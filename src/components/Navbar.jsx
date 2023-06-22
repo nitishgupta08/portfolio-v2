@@ -23,8 +23,14 @@ function Navbar() {
   useEffect(() => {
     if (open) {
       document.body.style.overflow = "hidden";
+      document
+        .querySelector('[name="theme-color"]')
+        .setAttribute("content", "#12b9e2");
     } else {
       document.body.style.overflow = "visible";
+      document
+        .querySelector('[name="theme-color"]')
+        .setAttribute("content", "#010809");
     }
   }, [open]);
 
