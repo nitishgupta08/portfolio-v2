@@ -17,7 +17,7 @@ export const projectsArchive = [
 
     {
         title: 'MQTT demonstration',
-        linklink: 'https://nitishgupta.netlify.app/',
+        livelink: null,
         githubLink: 'https://github.com/nitishgupta08/iotproject',
         date: 'Mar 2022',
         tags: ['ReactJS', 'MQTT']

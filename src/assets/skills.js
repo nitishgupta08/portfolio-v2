@@ -1,6 +1,6 @@
-export const languages = ['Typescript', 'JavaScript', 'C++', 'Python', 'Java', 'HTML', 'CSS', 'SQL']
+export const languages = ['Typescript', 'Javascript', 'C++', 'Python', 'Java', 'HTML', 'CSS', 'SQL']
 
-export const frameworks = ['React', 'Node', 'Django']
+export const tech = ['NextJS', 'ReactJS', 'NodeJS', 'Django']
 
 export const tools = ['Bash', 'Git & Github', 'Postman', 'MongoDB', 'Vite', 'Apache']
 

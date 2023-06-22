@@ -1,4 +1,4 @@
-import { languages, frameworks, tools, dsa } from "../assets/skills";
+import { languages, tech, tools, dsa } from "../assets/skills";
 import { useInView } from "react-intersection-observer";
 
 function Skills() {
@@ -35,9 +35,9 @@ function Skills() {
           </div>
 
           <div className="w-1/2 md:w-auto">
-            <h3 className="font-semibold uppercase md:text-xl">Frameworks</h3>
+            <h3 className="font-semibold uppercase md:text-xl">Tech</h3>
             <ul>
-              {frameworks.map((item, id) => {
+              {tech.map((item, id) => {
                 return (
                   <li key={id} className="opacity-90">
                     {item}
