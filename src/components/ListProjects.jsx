@@ -49,7 +49,7 @@ function ListProjects() {
                     aria-label="live link"
                     target="_blank"
                     rel="noreferrer"
-                    className=" transition-all duration-100 ease-linear  hover:text-accentDark">
+                    className="transition-all duration-100 ease-linear  hover:text-accentDark">
                     <ExternalLink />
                   </CustomLink>
                 )}
@@ -60,7 +60,7 @@ function ListProjects() {
                     aria-label="github link"
                     target="_blank"
                     rel="noreferrer"
-                    className=" transition-all duration-100 ease-linear  hover:text-accentDark">
+                    className="transition-all duration-100 ease-linear  hover:text-accentDark">
                     <GitHub />
                   </CustomLink>
                 )}

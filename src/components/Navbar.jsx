@@ -88,7 +88,7 @@ function Navbar() {
             <li className="mb-5 mt-10 md:m-0">
               <CustomLink
                 link="#about"
-                className={" group mr-5"}
+                className="group mr-5"
                 onClick={() => setOpen(false)}>
                 About
               </CustomLink>
@@ -97,7 +97,7 @@ function Navbar() {
             <li className="mb-5 md:m-0">
               <CustomLink
                 link="#projects"
-                className={"group mr-5"}
+                className="group mr-5"
                 onClick={() => setOpen(false)}>
                 Projects
               </CustomLink>
@@ -106,7 +106,7 @@ function Navbar() {
             <li className="mb-5 md:m-0">
               <CustomLink
                 link="#contact"
-                className={"group mr-5"}
+                className="group mr-5"
                 onClick={() => setOpen(false)}>
                 Contact
               </CustomLink>

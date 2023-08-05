@@ -1,5 +1,13 @@
 export const experience = [
     {
+        designation: 'SDE Intern',
+        company: 'AlgoBulls',
+        from: 'July 2023',
+        to: 'Present',
+        description: '....In progress....',
+        tags: ['Django', 'Django REST Framework', 'REST API', 'Postman']
+    },
+    {
         designation: 'Computer Networks Teaching Assistant',
         company: 'LNMIIT',
         from: 'Jan 2023',
