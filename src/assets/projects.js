@@ -1,7 +1,7 @@
 export const projects = [
     {
         title: 'CodeCollab',
-        linklink: 'https://nkg-cc.netlify.app/',
+        liveLink: 'https://nkg-cc.netlify.app/',
         githubLink: 'https://github.com/nitishgupta08/CodeCollab',
         imgSrc: '/codecollab.jpg',
         from: 'March 2023',
@@ -11,7 +11,7 @@ export const projects = [
     },
     {
         title: 'algotradersonline',
-        linklink: null,
+        liveLink: null,
         githubLink: 'https://github.com/nitishgupta08/algotradersonline',
         imgSrc: '/algotraders.png',
         from: 'Jan 2022',
@@ -22,7 +22,7 @@ export const projects = [
     },
     {
         title: 'Sorting Visualizer',
-        linklink: 'https://ng-sorting-visualizer.netlify.app/',
+        liveLink: 'https://ng-sorting-visualizer.netlify.app/',
         githubLink: 'https://github.com/nitishgupta08/Sorting-Visualizer',
         imgSrc: '/sorting.png',
         from: 'July 2021',

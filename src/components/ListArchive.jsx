@@ -51,9 +51,9 @@ function ListArchive() {
                   </td>
                   <td className="px-1 py-4">
                     <div className="flex items-center justify-start">
-                      {item.linklink && (
+                      {item.liveLink && (
                         <CustomLink
-                          href={item.linklink}
+                          href={item.liveLink}
                           aria-label="live link"
                           target="_blank"
                           rel="noreferrer"
