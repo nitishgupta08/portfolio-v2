@@ -5,7 +5,7 @@ const Card = (item) => {
   const { imgSrc, title, description, liveLink, githubLink, tags, from, to } =
     item.item;
   return (
-    <div className="relative my-2 mr-2 flex w-full max-w-[32rem] flex-col rounded-xl bg-[#03181b] bg-clip-border shadow-lg md:max-h-[40rem]">
+    <div className="relative my-2 flex h-[40rem] w-full max-w-[32rem] flex-col rounded-xl bg-[#03181b] bg-clip-border shadow-lg">
       <div className="relative mx-4 mt-4 overflow-hidden rounded-xl bg-clip-border shadow-lg">
         <img src={imgSrc} alt={title} />
         <div className="to-bg-black-10 from-transparent via-transparent to-black/60 absolute inset-0 h-full w-full bg-gradient-to-tr"></div>

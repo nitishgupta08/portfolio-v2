@@ -10,3 +10,16 @@
 body {
   background-color: #010809;
 }
+
+.swiper-pagination.swiper-pagination-bullets-dynamic.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: #d4d8f7;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #d9f5fc;
+}

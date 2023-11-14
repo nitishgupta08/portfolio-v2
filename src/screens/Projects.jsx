@@ -1,10 +1,12 @@
+import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { projects } from "../assets/projects";
 import { Link } from "react-router-dom";
 import Card from "../components/ui/Card";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
 import "swiper/css";
-import { useState, useEffect } from "react";
+import "swiper/css/pagination";
 
 function Projects() {
   const { ref, inView } = useInView({
@@ -50,7 +52,9 @@ function Projects() {
             spaceBetween={10}
             pagination={{
               clickable: true,
+              dynamicBullets: true,
             }}
+            modules={[Pagination]}
             className="mySwiper">
             {projects.map((item, id) => {
               return (
@@ -60,7 +64,7 @@ function Projects() {
               );
             })}
           </Swiper>
-          <p className="inline-block">
+          <p className="inline-block px-2">
             <Link to="project-archive" className="group my-5 flex items-center">
               <span className="bg-gradient-to-r  from-accentDark to-accentDark bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_2px]">
                 View Full Project Archive&nbsp;
