@@ -16,22 +16,24 @@ const Card = (item) => {
           <div className="flex">
             {liveLink && (
               <CustomLink
-                href={item.liveLink}
+                href={liveLink}
                 aria-label="live link"
                 target="_blank"
                 rel="noreferrer"
-                className="transition-all duration-100 ease-linear  hover:text-accentDark">
+                className="transition-all duration-100 ease-linear  hover:text-accentDark"
+              >
                 <ExternalLink />
               </CustomLink>
             )}
 
             {githubLink && (
               <CustomLink
-                href={item.githubLink}
+                href={githubLink}
                 aria-label="github link"
                 target="_blank"
                 rel="noreferrer"
-                className="transition-all duration-100 ease-linear  hover:text-accentDark">
+                className="transition-all duration-100 ease-linear  hover:text-accentDark"
+              >
                 <GitHub />
               </CustomLink>
             )}

@@ -35,14 +35,16 @@ function Projects() {
     <section ref={ref}>
       <div
         id="projects"
-        className="container mx-auto px-4 pt-16  text-textDark lg:px-16">
+        className="container mx-auto px-4 pt-16  text-textDark lg:px-16"
+      >
         <div className="p-4 md:flex md:justify-between md:p-0">
           <h2
             className={`text-xl font-semibold uppercase text-accentDark transition-all  duration-200 ease-out md:text-center md:text-2xl ${
               inView
                 ? "opacity-1 translate-x-0"
                 : "-translate-x-[100%] opacity-0"
-            }`}>
+            }`}
+          >
             Projects
           </h2>
         </div>
@@ -55,7 +57,8 @@ function Projects() {
               dynamicBullets: true,
             }}
             modules={[Pagination]}
-            className="mySwiper">
+            className="mySwiper"
+          >
             {projects.map((item, id) => {
               return (
                 <SwiperSlide key={id}>
@@ -76,7 +79,8 @@ function Projects() {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="h-4 w-4 transition-all duration-500 ease-out group-hover:translate-x-2">
+                className="h-4 w-4 transition-all duration-500 ease-out group-hover:translate-x-2"
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
